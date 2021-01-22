@@ -20,12 +20,28 @@ const {
 const cwd = process.cwd()
 
 const cli = meow(`
+
 	Usage
-	  $ mv-copy <from> <to> 
+	  $ dir2dir <from> <to> 
 
 	Examples
-	  $ mv-copy /home/path/directory /home/path/new_directory
-	  
+	  $ dir2dir /directory/originalComponent /directory/newComponent
+    
+        if originalComponent has the structure
+
+        /directory/originalComponent/
+
+        - originalComponent.css
+        - originalComponent.html
+        - originalComponent.js
+
+        dir2dir would create
+
+        /directory/newComponent/
+
+        - newComponent.css
+        - newComponent.html
+        - newComponent.js
 `, {
 	flags: {
 		from: {
