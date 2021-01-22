@@ -1,0 +1,27 @@
+{
+  "name": "dir2dir",
+  "version": "1.0.1",
+  "description": "Copy a directory to a renamed directory while renaming matching child files",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "dir2dir": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsmithdev/dir2dir.git"
+  },
+  "author": "Jamie Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsmithdev/dir2dir/issues"
+  },
+  "homepage": "https://github.com/jsmithdev/dir2dir#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "meow": "^9.0.0"
+  }
+}
